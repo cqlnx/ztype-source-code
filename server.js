@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'ztype.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/i_said_it_dont_work', (req, res) => {
